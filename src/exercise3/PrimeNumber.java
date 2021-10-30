@@ -6,23 +6,20 @@ public class PrimeNumber {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int num = input.nextInt();
-        int i = 2;
-        boolean a = false;
-        while(i < num/2){
-          if(num%i != 0)
-          {
-            a = true;
-            i ++;
+        int number = input.nextInt();
+        boolean prime = true;
+        int a = 2;
+        while(number > 2){
+          if(number != a && number % a == 0 ){
+            prime = false;
+            break;
           }
-          else {
-            System.out.println("Prime Number: " + a);
-            i = num/2;
+          if(a == 100){
+            break;
           }
+          a ++;
         }
-        if(a == true){
-          System.out.println("Prime number: " + a);
-        }
+        System.out.println("Prime number: " + prime);
 
         
     }

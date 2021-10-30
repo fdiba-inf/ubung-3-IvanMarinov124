@@ -8,8 +8,8 @@ public class NumberCounter {
         Scanner input = new Scanner(System.in);
         int i = input.nextInt();
         double sum = 0.0;
-        double pos = 0.0;
-        double neg = 0.0;
+        int pos = 0;
+        int neg = 0;
 
         while( i != 0){
 
